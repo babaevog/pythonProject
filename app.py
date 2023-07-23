@@ -33,6 +33,7 @@ def index6():
     return render_template('project8.html')
 
 
+
 @app.route("/genius6")
 def index7():
     return render_template('project10.html')
