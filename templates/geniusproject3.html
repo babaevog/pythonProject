@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/geniusproject3.css')}}">
+</head>
+<body>
+    <header class="header";>
+        <div class="container">
+            <div class="logo">    
+                <strong> Freelancer </strong> portfolio
+            </div>
+            <div class="nav">
+                <div class="link__active">
+                    <a href="geniusproject.html">
+                    Projects
+                    </a>
+                </div>
+                <div>
+                    <a href="skills.html">
+                    Skills
+                    </a>
+                </div>
+                <div>
+                    <a href="contacts.html">
+                    Contacts
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header> 
+    <main>
+        <h1 class="project__title">Video service</h1>
+        <div class="projects">
+        <img src="{{url_for('static',filename='img/02-big.jpg')}}" alt='Проект'>
+        </div>
+        <div class="Skill">
+            <h3 style="text-align: center;">Skills: React, Node.js, MongoDB</h3>
+        </div>
+        <div class="button">
+            <img src="{{url_for('static',filename='img/image.png')}}" alt='Проект'>
+        </div>
+    </main>   
+    <footer class="footer">
+         <div class="social">
+            <div class="social__link">
+                <a href="https://vk.com/rusloidus">
+               <img src="{{url_for('static',filename='img/Vector.png')}}" alt='Проект'>
+                </a>
+            </div>
+            <div class="social__link">
+                <img src="{{url_for('static',filename='img/Vector (1).png')}}" alt='Проект'>
+            </div>
+            <div class="social__link">
+                <img src="{{url_for('static',filename='img/Vector (2).png')}}" alt='Проект'>
+            </div>
+            <div class="social__link">
+                <img src="{{url_for('static',filename='img/Vector (3).png')}}" alt='Проект'>
+            </div>
+            <div class="social__link">
+                <img src="{{url_for('static',filename='img/Vector (4).png')}}" alt='Проект'>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

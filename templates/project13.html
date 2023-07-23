@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/contacts.css')}}">
+</head>
+<body>
+    <header class="header";>
+    <div class="container">
+        <div class="logo">
+            <strong> Freelancer </strong> portfolio
+        </div>
+        <div class="nav">
+            <div >
+                <a href="/">
+                Projects
+                </a>
+            </div>
+            <div>
+                <a href="/skills">
+                Skills
+                </a>
+            </div>
+            <div class="link__active">
+                <a href="/contacts">
+                Contacts
+                </a>
+            </div>
+        </div>
+    </div>
+    </header>
+    <main class="main">
+<!--        <div class="contacts__container">-->
+<!--            <h1 class="contacts__title">Contacts</h1>-->
+<!--            <div class="contacts__item">-->
+<!--                <h2>Location</h2>-->
+<!--                <p>Toronto, Canada</p>-->
+<!--            </div>-->
+<!--            <div class="contacts__item">-->
+<!--                <h2>Telegram / WhatsApp</h2>-->
+<!--                <p>+7 (978) 260-68-56</p>-->
+<!--            </div>-->
+<!--            <div class="contacts__item">-->
+<!--                <h2>Email</h2>-->
+<!--                <p>aikoxworld@gmail.com</p>-->
+<!--            </div>-->
+            {% block cont %}{% endblock %}
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="social">
+            <div class="social__link">
+                <a href="https://vk.com/rusloidus">
+               <img src="{{url_for('static',filename='img/Vector.png')}}" alt='Проект'>
+                </a>
+            </div>
+            <div class="social__link">
+                <img src="{{url_for('static',filename='img/Vector (1).png')}}" alt='Проект'>
+            </div>
+            <div class="social__link">
+                <img src="{{url_for('static',filename='img/Vector (2).png')}}" alt='Проект'>
+            </div>
+            <div class="social__link">
+                <img src="{{url_for('static',filename='img/Vector (3).png')}}" alt='Проект'>
+            </div>
+            <div class="social__link">
+                <img src="{{url_for('static',filename='img/Vector (4).png')}}" alt='Проект'>
+            </div>
+        </div>
+    </footer>
+</html>
